@@ -1,0 +1,401 @@
+@font-face {
+    font-family: 'dejavu_serifbook';
+    src: url('polices/DejaVuSerif-webfont.eot');
+    src: url('polices/DejaVuSerif-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/DejaVuSerif-webfont.woff2') format('woff2'),
+         url('polices/DejaVuSerif-webfont.woff') format('woff'),
+         url('polices/DejaVuSerif-webfont.ttf') format('truetype'),
+         url('polices/DejaVuSerif-webfont.svg#dejavu_serifbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+  
+@font-face {
+    font-family: 'gandhi_sansregular';
+    src: url('GandhiSans-Regular-webfont.eot');
+    src: url('GandhiSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('GandhiSans-Regular-webfont.woff2') format('woff2'),
+         url('GandhiSans-Regular-webfont.woff') format('woff'),
+         url('GandhiSans-Regular-webfont.ttf') format('truetype'),
+         url('GandhiSans-Regular-webfont.svg#gandhi_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+
+/*polices et couleurs*/
+
+body
+{
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: black;
+}
+  
+.entete h1
+{
+  font-family: 'gandhi_sansregular', 'Trebuchet MS', sans-serif;
+  font-size: 2.8em;
+  margin-bottom: -15px;
+}
+  
+.entete h3
+{
+  font-family: 'gandhi_sansregular', 'Trebuchet MS', sans-serif;
+}
+
+h2
+{
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+aside h3, h2
+{
+    text-transform: uppercase;
+}
+
+
+
+/*dimensions générales*/
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    border: 1px solid black;
+}
+
+/*aside*/
+
+aside
+{
+  flex: 1;
+  text-align: justify;
+  background-color: rgb(154,205,50);
+}
+
+.medaillon
+{
+  overflow : hidden;
+	-webkit-border-radius : 50px;
+	-moz-border-radius : 50px;
+	border-radius: 50px;
+	width: 100px;
+  height: 100px;
+  position: relative;
+  top: 20px;
+  left: 60px;
+}
+
+.entete_responsive
+{
+  visibility: hidden;
+}
+
+aside h3
+{
+  text-align: center;
+  background-color: gray;
+  color: rgb(154,205,50);
+  font-family: 'dejavu_serifbook', Arial, sans-serif;
+}
+
+#contact
+{
+  margin-top: -90px;
+}
+
+#a_propos
+{
+  margin-top: 30px;
+}
+
+li
+{
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+#a_propos p
+{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#loisirs
+{
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+#titre_loisirs
+{
+  margin-bottom: 15px;
+}
+
+.icones
+{
+  color: grey;
+  margin-left: 25px;
+  border: 5px solid grey;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+#icones_loisirs
+{
+    text-align: center;
+}
+
+/*section*/
+
+section
+{
+    flex: 3;
+}
+
+#titre_formation
+{
+    display: flex;
+    align-items: baseline;
+    margin-left: 40px;
+}
+
+.logo_formation
+{
+    font-size: 1.8em;
+    color: rgb(154,205,50);
+}
+
+.element_formation
+{
+    margin-left: 30px;
+}
+
+#formation_actuelle
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-left: 40px;
+}
+
+.puce
+{
+    color: rgb(154,205,50);
+}
+
+.annee_actuelle
+{
+    margin-left: 25px;
+    margin-right: 35px;
+}
+
+.paragraphe_actuelle
+{
+    text-align: justify;
+    padding-right: 20px;
+}
+
+#ancienne_formation
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-left: 40px;
+}
+
+.puce_pleine
+{
+    color: rgb(154,205,50);
+}
+
+.annee_ancienne
+{
+    margin-left: 25px;
+    margin-right: 35px;
+}
+
+.paragraphe_ancienne
+{
+    text-align: justify;
+    padding-right: 20px;
+}
+
+#titre_experience
+{
+    display: flex;
+    align-items: baseline;
+    margin-left: 40px;
+}
+
+.logo_experience
+{
+    font-size: 1.8em;
+    color: rgb(154,205,50);
+}
+
+.element_experience
+{
+    margin-left: 30px;
+}
+
+#exp_actuelle
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-left: 40px;
+}
+
+.puce
+{
+    color: rgb(154,205,50);
+}
+
+.poste_actuel
+{
+    margin-left: 25px;
+    margin-right: 35px;
+}
+
+.paragraphe_poste
+{
+    text-align: justify;
+    padding-right: 20px;
+}
+
+#ancienne_exp
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-left: 40px;
+}
+
+.puce_pleine
+{
+    color: rgb(154,205,50);
+}
+
+.ancien_emploi
+{
+    margin-left: 25px;
+    margin-right: 41px;
+}
+
+.paragraphe_emploi
+{
+    text-align: justify;
+    padding-right: 20px;
+}
+
+#titre_reco
+{
+    display: flex;
+    align-items: baseline;
+    margin-left: 40px;
+}
+
+.logo_reco
+{
+    font-size: 1.8em;
+    color: rgb(154,205,50);
+}
+
+.element_reco
+{
+    margin-left: 30px;
+}
+
+#reco
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.entete
+{
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+#prenom
+{
+  color: rgb(154,205,50);
+}
+
+#developpeur
+{
+  border-bottom: solid 1px rgb(154,205,50);
+}
+
+hr
+{
+  border: 1px solid rgb(154,205,50);
+  width: 85%;
+  margin-top: -15px;
+}
+
+@media all and (max-width: 1024px)
+{
+  #bloc_page
+  {
+    width: auto;
+    flex-direction: column;
+  }
+
+  #medaillon
+  {
+    display: none;
+  }
+
+  .entete_responsive
+  {
+    visibility: visible;
+    background-color: white;
+
+  }
+
+  .entete_responsive h1
+  {
+    font-family: 'gandhi_sansregular', 'Trebuchet MS', sans-serif;
+    font-size: 2.8em;
+    margin-bottom: -15px;
+    text-align: center;
+  }
+  
+  .entete_responsive h3
+  {
+    font-family: 'gandhi_sansregular', 'Trebuchet MS', sans-serif;  
+    background-color: white;
+    text-transform: none;
+    color: black;
+  }
+
+  .entete
+  {
+    visibility: hidden;
+  }
+
+  aside
+  {
+    width: auto;
+  }
+
+  #contact
+  {
+    margin-top: 30px;
+  }
+
+  section
+  {
+    margin-top: -120px;
+  }
+  hr
+  {
+    width: auto;
+  }
+}
